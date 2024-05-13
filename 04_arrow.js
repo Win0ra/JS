@@ -8,6 +8,7 @@
  */
 
 let arrow1 = () => {}
+    return arg + 1;
 
 /**
  * Déclarer une fonction fléchée qui renvoi l'argument + 1
@@ -19,5 +20,6 @@ let arrow1 = () => {}
  */
 
 let arrow2 = () => {}
+    arg + 1;
 
 module.exports = {arrow1, arrow2};
