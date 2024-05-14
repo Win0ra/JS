@@ -42,7 +42,7 @@ console.log(arr); // [1, 2, 3]
 const merge = (obj1, obj2) => ({...obj1, ...obj2});
 const obj1 = {a: 1, b: 2};
 const obj2 = {c: 3, d: 4};
-const result = merge(obj1, obj2);
+const result1 = merge(obj1, obj2);
 console.log(result); // {a: 1, b: 2, c: 3, d: 4}
 
 
