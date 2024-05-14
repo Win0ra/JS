@@ -14,7 +14,7 @@
 
 const extractFirstTwo = ([first, second]) => [first, second];
 const array = [1, 2, 3];
-const result = extractFirstTwo(arr);
+const result = extractFirstTwo(array);
 console.log(result);
 
 
