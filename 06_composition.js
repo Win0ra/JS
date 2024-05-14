@@ -9,6 +9,11 @@
  */
 
 const concat = (arr1, arr2) => [...arr1, ...arr2];
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const result = concat(arr1, arr2);
+console.log(result); // [1, 2, 3, 4, 5, 6]
+
 
 
 /**
@@ -21,6 +26,11 @@ const concat = (arr1, arr2) => [...arr1, ...arr2];
  */
 
 const push = (arr, item) => [...arr, item];
+const arr = [1, 2, 3];
+const newArr = push(arr, 4);
+console.log(newArr); // [1, 2, 3, 4]
+console.log(arr); // [1, 2, 3]
+
 
 
 /**
@@ -30,6 +40,11 @@ const push = (arr, item) => [...arr, item];
  */
 
 const merge = (obj1, obj2) => ({...obj1, ...obj2});
+const obj1 = {a: 1, b: 2};
+const obj2 = {c: 3, d: 4};
+const result = merge(obj1, obj2);
+console.log(result); // {a: 1, b: 2, c: 3, d: 4}
+
 
 ""
 /**
