@@ -15,7 +15,7 @@
 const extractFirstTwo = ([first, second]) => [first, second];
 const array = [1, 2, 3];
 const result = extractFirstTwo(arr);
-console.log(result); // [1, 2]
+console.log(result);
 
 
 /**
@@ -28,7 +28,7 @@ console.log(result); // [1, 2]
 const extractRest = ([first, ...rest]) => rest;
 const array1 = [1, 2, 3];
 const result1 = extractRest(arr);
-console.log(result); // [2, 3]
+console.log(result); 
 
 
 /**
@@ -46,7 +46,7 @@ console.log(result); // [2, 3]
 const extractName = ({name}) => name;
 const obj = {name: "toto", age: 42};
 const result2 = extractName(obj);
-console.log(result); // "toto"
+console.log(result); 
 
 
 /**
@@ -63,7 +63,7 @@ console.log(result); // "toto"
 const removePassword = ({password, ...user}) => user;
 const user = {name: "toto", password: "1234"};
 const result3 = removePassword(user);
-console.log(result); // {name: "toto"}
+console.log(result); 
 
 
 module.exports = {extractFirstTwo, extractRest, extractName, removePassword}

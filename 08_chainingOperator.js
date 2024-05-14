@@ -17,14 +17,20 @@
  */
 
 const getGroupName = (user) => {
-    return 
+    return user?.group?.name;
 }
 console.log(getGroupName( {
     name: "John",
     group: {
         name: "admin"
     }
-}));
+})); // "admin"
+
+console.log(getGroupName( {
+    name: "Jane",
+    group: null
+})); // undefined
+
 
 
 
