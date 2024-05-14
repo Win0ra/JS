@@ -27,7 +27,7 @@ console.log(result);
 
 const extractRest = ([first, ...rest]) => rest;
 const array1 = [1, 2, 3];
-const result1 = extractRest(arr);
+const result1 = extractRest(array1);
 console.log(result); 
 
 
