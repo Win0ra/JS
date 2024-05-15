@@ -79,15 +79,12 @@ asynchroneFunction();
 //décommentez la ligne suivante une fois le package installé
 const axios = require("axios");
 
-async function main() {
-    const url = "https://jsonplaceholder.typicode.com/todos/1";
-    const data = await apiResponse(url);
-    
-    console.log(data);
+const apiResponse = async (url) => {
+
+    const response = await axios.get (url)
+    return response.data;
 }
-
-main();
-
-
+apiResponse("https://jsonplaceholder.typicode.com/todos/1")
+    then((data) => console.log(data));
 
 module.exports = {usingThen, usingAwait, apiResponse};
