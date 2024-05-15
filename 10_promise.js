@@ -13,5 +13,8 @@ const sleep = () => {
     });
 };
 
+sleep()
+    .then(() => console.log('done'))
+    .catch(() => console.log('error'));
 
 module.exports = {sleep};

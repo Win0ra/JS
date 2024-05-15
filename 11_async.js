@@ -16,6 +16,7 @@ const {sleep} = require("./10_promise");
 const usingThen = (cb) => {
     console.log("start");
     sleep(2000).then(() => {
+
         console.log("end");
         cb();
     });
@@ -81,6 +82,7 @@ const axios = require("axios");
 async function main() {
     const url = "https://jsonplaceholder.typicode.com/todos/1";
     const data = await apiResponse(url);
+    
     console.log(data);
 }
 
