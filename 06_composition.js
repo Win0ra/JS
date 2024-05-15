@@ -59,6 +59,8 @@ console.log(result); // {a: 1, b: 2, c: 3, d: 4}
 const setName = (obj, name) => ({...obj, name});
 const obj = {name: 'toto'};
 const newObj = setName(obj, 'titi');
+
+
 console.log(newObj); // {name: 'titi'}
 console.log(obj); // {name: 'toto'}
 

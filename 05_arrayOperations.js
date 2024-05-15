@@ -42,6 +42,12 @@ const filterNameStartByA = (array) => array.filter(name => name[0] === 'A');
 
 const sum = (array) => array.reduce((acc, val) => acc + val, 0);
 
+// const sum = (array) => {
+//   return array.reduce((acc, i) => {
+//     return acc + i
+//   })
+// }
+
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
